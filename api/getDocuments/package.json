@@ -1,0 +1,14 @@
+{
+  "name": "service-get-documents",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.62",
+    "aws-sdk": "^2.742.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,51 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "AwsTypescriptCdkStack": {
+        "id": "AwsTypescriptCdkStack",
+        "path": "AwsTypescriptCdkStack",
+        "children": {
+          "DocumentsBucket": {
+            "id": "DocumentsBucket",
+            "path": "AwsTypescriptCdkStack/DocumentsBucket",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "AwsTypescriptCdkStack/DocumentsBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketEncryption": {
+                      "serverSideEncryptionConfiguration": [
+                        {
+                          "serverSideEncryptionByDefault": {
+                            "sseAlgorithm": "AES256"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "AwsTypescriptCdkStack/DocumentsBucket/Notifications"
+              }
+            }
+          },
+          "DocumentsBucketNameExport": {
+            "id": "DocumentsBucketNameExport",
+            "path": "AwsTypescriptCdkStack/DocumentsBucketNameExport"
+          }
+        }
+      }
+    }
+  }
+}

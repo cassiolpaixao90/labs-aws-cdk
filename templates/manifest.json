@@ -1,0 +1,84 @@
+{
+  "version": "5.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsTypescriptCdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsTypescriptCdkStack.template.json"
+      },
+      "metadata": {
+        "/AwsTypescriptCdkStack/DocumentsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentsBucket9EC9DEB9",
+            "trace": [
+              "new Bucket (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1206:22)",
+              "new AwsTypescriptCdkStack (D:\\workspace_ts\\aws-typescript-cdk\\lib\\aws-typescript-cdk-stack.ts:8:20)",
+              "Object.<anonymous> (D:\\workspace_ts\\aws-typescript-cdk\\bin\\aws-typescript-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsTypescriptCdkStack/DocumentsBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentsBucketNameExport",
+            "trace": [
+              "new AwsTypescriptCdkStack (D:\\workspace_ts\\aws-typescript-cdk\\lib\\aws-typescript-cdk-stack.ts:12:5)",
+              "Object.<anonymous> (D:\\workspace_ts\\aws-typescript-cdk\\bin\\aws-typescript-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\workspace_ts\\aws-typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.63.0",
+      "@aws-cdk/cx-api": "1.63.0",
+      "@aws-cdk/cloud-assembly-schema": "1.63.0",
+      "@aws-cdk/aws-s3": "1.63.0",
+      "@aws-cdk/aws-events": "1.63.0",
+      "@aws-cdk/aws-iam": "1.63.0",
+      "@aws-cdk/region-info": "1.63.0",
+      "@aws-cdk/aws-kms": "1.63.0",
+      "jsii-runtime": "node.js/v12.18.2"
+    }
+  }
+}
