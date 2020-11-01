@@ -1,5 +1,5 @@
 {
-  "name": "aws-typescript-cdk",
+  "name": "labs-aws-cdk",
   "version": "0.1.0",
   "bin": {
     "aws-typescript-cdk": "bin/aws-typescript-cdk.js"
